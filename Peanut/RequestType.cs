@@ -3,7 +3,8 @@ namespace Peanut
 {
 	public enum RequestType
 	{
-		POST,
-		GET
+		
+		GET,
+        POST
 	}
 }

@@ -38,6 +38,13 @@ namespace Peanut.Binding
 			this.File.InputStream.Read(array, 0, array.Length);
 			return array;
 		}
+        public ArraySegment<byte> ToData(byte[] data)
+        {
+            
+            int count =(int)this.File.InputStream.Length;
+            this.File.InputStream.Read(data, 0, count);
+            return new ArraySegment<byte>(data, 0, count);
+        }
 		public ArraySegment<byte> GetData(byte[] data)
 		{
 			this.File.InputStream.Position = 0L;

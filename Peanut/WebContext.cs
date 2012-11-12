@@ -60,19 +60,25 @@ namespace Peanut
             }
             
         }
-        internal ActionItem Action
+
+        public ActionItem Action
         {
             get;
-            set;
+            internal set;
         }
 
-      
+        public RequestType RequestType
+        {
+            get;
+            internal set;
+        }
 
-        //public static void SetActionOutput(OutputContractAttribute output)
-        //{
-        //    if (ActionHandler.CurrentAction != null)
-        //        ActionHandler.CurrentAction.Output = output;
-        //}
+        public string ActionPath
+        {
+            get;
+            internal set;
+        }
+      
 
         public HttpResponse Response
         {

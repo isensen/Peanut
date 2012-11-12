@@ -110,6 +110,7 @@
     <Compile Include="JSONContractAttribute.cs" />
     <Compile Include="MatchUrlAttribute.cs" />
     <Compile Include="OutputContractAttribute.cs" />
+    <Compile Include="OutputObject.cs" />
     <Compile Include="PeanutSection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PublicFilter.cs" />

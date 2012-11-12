@@ -9,7 +9,7 @@ using Peanut.Binding;
 using System.Collections.Specialized;
 namespace Peanut
 {
-    class ActionItem
+    public class ActionItem
     {
         public ActionItem(Type info)
         {

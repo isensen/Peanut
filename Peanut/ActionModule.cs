@@ -18,20 +18,24 @@ namespace Peanut
 		}
 		private void OnRequest(object sender, EventArgs e)
 		{
-			try
+            WebContext context = WebContext.Current;
+            try
 			{
 				string filePath = WebContext.Current.Request.FilePath;
                 //判断当前类型是否需要进行模板处理,默认只对aspx进行处理
 				if (Utils.IsHandler(Path.GetExtension(filePath)))
 				{
-					string url = filePath.Substring(0, filePath.LastIndexOf('.'));
+                    
+                    string url = filePath.Substring(0, filePath.LastIndexOf('.'));
                     //获取对应的控制器方法
 					ActionItem action = Utils.GetAction(url);
-					WebContext.Current.Action = action;
+                    context.ActionPath = url;
+                    context.Action = action;
+                    context.RequestType = (RequestType)Enum.Parse(typeof(RequestType), context.Request.RequestType);
 					if (action != null)
 					{
 						object obj = action.Execute();
-						WebContext.Current.Result = obj;
+                        context.Result = obj;
                         //如果是一个返回类型
 						if (obj != null && obj is IResult)
 						{
@@ -42,7 +46,7 @@ namespace Peanut
 			}
 			catch (Exception appError)
 			{
-				WebContext.Current.AppError = appError;
+                context.AppError = appError;
 			}
 		}
 		private void OnEndRequest(object sender, EventArgs e)
