@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.DBModule", "NorthWind.DBModule\NorthWind.DBModule.csproj", "{5E6AB50F-145F-410E-83BE-42DE23F92629}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.BusinessLogic", "NorthWind.BusinessLogic\NorthWind.BusinessLogic.csproj", "{4120A2DF-E2B1-4742-B77D-AE8AB1273167}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{D4826C28-A9C6-4F2C-9061-CBE389D474D4}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\Peanut.dll = Lib\Peanut.dll
+		Lib\Smark.Core.dll = Lib\Smark.Core.dll
+		Lib\Smark.Data.dll = Lib\Smark.Data.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.WebApp", "NorthWind.WebApp\NorthWind.WebApp.csproj", "{1203AB54-7BF3-4BD1-9762-1B93A732462D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Document", "Document", "{B1C34614-CB91-4065-83C3-01506BFE12DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E6AB50F-145F-410E-83BE-42DE23F92629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E6AB50F-145F-410E-83BE-42DE23F92629}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E6AB50F-145F-410E-83BE-42DE23F92629}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E6AB50F-145F-410E-83BE-42DE23F92629}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4120A2DF-E2B1-4742-B77D-AE8AB1273167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4120A2DF-E2B1-4742-B77D-AE8AB1273167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4120A2DF-E2B1-4742-B77D-AE8AB1273167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4120A2DF-E2B1-4742-B77D-AE8AB1273167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1203AB54-7BF3-4BD1-9762-1B93A732462D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1203AB54-7BF3-4BD1-9762-1B93A732462D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1203AB54-7BF3-4BD1-9762-1B93A732462D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1203AB54-7BF3-4BD1-9762-1B93A732462D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
